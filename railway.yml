@@ -1,0 +1,8 @@
+version: '2'
+services:
+  api:
+    command: 'python hulk_launcher.py server -m 10000 --persistent https://lms.bennett.edu.in/login/index.php'
+    ports:
+      - 6666
+    # Expose a custom port
+    - port: 6666:api
